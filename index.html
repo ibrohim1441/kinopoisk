@@ -1,0 +1,160 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+        crossorigin="anonymous"
+      />
+      <title>kino</title>
+    </head>
+    <body>
+      <div class="container">
+
+        <div class="row">
+          <div class="col-3 mt-5 ">
+            <form action="" class="border p-3 move">
+              <div>
+                <label for="move_name">KINO NOMI</label>
+                <input type="text" class="form-control" id="move_name">
+              </div>
+              <div>
+                <label for="year">chiqqan yili</label>
+                <input type="text" class="form-control" id="year">
+              </div>
+              <div>
+                <label for="reting">reting</label>
+                <input type="text" class="form-control" id="reting">
+              </div>
+              <div>
+                <label for="kategorya">kategorya</label>
+                <select name="" class="form-select" id="kategorya" value="All">
+                  <option value="Uncategorized">
+                    Uncategorized
+                  </option>
+                  <option value="Documentary">
+                    Documentary
+                  </option>
+                  <option value="Music">
+                    Music
+                  </option>
+                  <option value="Drama">
+                    Drama
+                  </option>
+                  <option value="Adventure">
+                    Adventure
+                  </option>
+                  <option value="Comedy">
+                    Comedy
+                  </option>
+                  <option value="Animation">
+                    Animation
+                  </option>
+                  <option value="Family">
+                    Family
+                  </option>
+                  <option value="Romance">
+                    Romance
+                  </option>
+                  <option value="Action">
+                    Action
+                  </option>
+                  <option value="Fantasy">
+                    Fantasy
+                  </option>
+                  <option value="Horror">
+                    Horror
+                  </option>
+                  <option value="Sci-Fi">
+                    Sci-Fi
+                  </option>
+                </select>
+              </div>
+              <button class="btn btn-primary">Qoshish</button>
+            </form>
+            <form class="forma" id="forma">
+              <input type="text" class="form-control m-3" aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default" id="kinosearch" placeholder="Kinoni nomini kiriting">
+              <input type="text" class="form-control m-3" aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default" placeholder="">
+              <select class="form-select multiple select m-3" id="filter_kategoriya" aria-label="Default select example">
+                  <option selected=""  value="All">All</option>
+                  <option value="Uncategorized">Uncategorized</option>
+                  <option value="Documentary">Documentary</option>
+                  <option value="Music">Music</option>
+                  <option value="Drama">Drama</option>
+                  <option value="Animation">Animation</option>
+                  <option value="Comedy">Comedy</option>
+                  <option value="Family">Family</option>
+                  <option value="Sport">Sport</option>
+                  <option value="Adventure">Adventure</option>
+                  <option value="Fantasy">Fantasy</option>
+                  <option value="Romance">Romance</option>
+                  <option value="Action">Action</option>
+                  <option value="Horror">Horror</option>
+                  <option value="Sci-Fi">Sci-Fi</option>
+                  <option value="News">News</option>
+                  <option value="History">History</option>
+                  <option value="Thriller">Thriller</option>
+                  <option value="Western">Western</option>
+                  <option value="Crime">Crime</option>
+                  <option value="Mystery">Mystery</option>
+                  <option value="Biography">Biography</option>
+                  <option value="Musical">Musical</option>
+                  <option value="War">War</option>
+              </select>
+              <select class="form-select m-3" id="reyting_5" aria-label="Default select example">
+                  <option selected>Rating (high to low)</option>
+                  <option value="1">High</option>
+                  <option value="2">Low</option>
+              </select>
+
+              <button class="btn btn-primary m-3">Qidirish</button>
+
+
+          </form>
+          <div class="savedmoves d-flex flex-column">
+
+            <!-- <div class="card float-end m-2" style="width: 12rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <button class="btn btn-danger">O'chirish</button>
+                </div> 
+            </div> -->
+        </div>
+          </div>
+          <div class="col-9 mt-5">
+            <h1>Movies catalog</h1>
+            <div class="row" id="content">
+              <div class="col-4">
+                <div class="card">
+                  <img src="https://picsum.photos/270/203" alt="img">
+                  <div class="card-body">
+                    <h5 class="card-title">Patton Oswalt: Annihilation</h5>
+                    <p class="card-text"> 2017</p>
+                    <p class="card-text"> 1.5</p>
+                    <p class="card-text"> english</p>
+                    <div class="d-flex justify-content-between">
+                      <button  class="btn btn-outline-primary">Primary</button>
+                      <button id="Secondary" class="btn btn-outline-secondary">Secondary</button> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              
+            </div>
+          </div>
+        </div>
+    
+        </div>
+      </div>
+
+      <script src="./js/movies-new.js"></script>
+      <script src="./js/main.js"></script>
+    </body>
+  </html>
